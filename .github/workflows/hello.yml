@@ -13,3 +13,8 @@ jobs:
         run: date
       - name: Show machine info
         run: uname -a
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List repository files
+        run: ls -la
